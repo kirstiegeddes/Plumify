@@ -1,0 +1,214 @@
+/*
+.main-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}*/
+
+.libary {
+    background-color: $light-blue;
+    width: 60%;
+    display: block;
+    float:left;
+}
+
+.libary__title {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding: 0% 4% 0% 5%;
+}
+
+.libary__images {
+    text-align:center;
+    padding-bottom:20px;
+}
+
+.libary__image {
+    display: inline-block;
+    margin: 0 auto;
+    overflow:hidden;
+    cursor:pointer;
+    position: relative;
+    width: 85px;
+    height: 85px;
+    img {
+        width: 90%;
+        padding: 4% 0% 2% 0%;
+    }
+}
+.hidden {
+    display: none;
+}
+
+.libary__image:hover .visible {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.libary__image:hover .hidden {
+    display: block;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #4c4c4c;
+    opacity: 0.8;
+}
+
+.activities {
+    background-color: $light-blue;
+    width: 30%;
+    padding:2.5%;
+    float:left;
+    margin-left:5%;
+}
+
+.activity {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    img {
+        width:70px;
+    }
+}
+
+.activity__name {
+    width: 70%;
+    line-height: 1px;
+    padding:10px;
+}
+
+.activity__listen--bold {
+    font-weight:bold;
+    color:$blue;
+}
+.activity__button {
+    text-align:center;
+}
+
+.now-playing {
+    position:fixed;
+    bottom:0;
+    background-color:$dark-blue;
+    width:100%;
+    left:0;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,.3);
+}
+
+.now-playing__music {
+    display:flex;
+    padding:20px;
+    width:60%;
+    float:left;
+}
+.now-playing__music__name {
+    padding: 0 10px 0 10px;
+    width:100%;
+    p {
+        color:#fff;
+        margin:0 0 12px 0;
+    }
+    input {
+        width:100%;
+    }
+}
+
+.now-playing__music__icons {
+    display:flex;
+    align-content:center;
+    img {
+        padding:0 30px 0 0;
+    }
+}
+.now-playing__music__icons--disabled {
+    opacity:0.5;
+}
+
+.now-playing__sharing {
+    width:36%;
+    float:left;
+}
+
+.shared {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.shared__name {
+    width: 70%;
+    line-height: 1px;
+    padding: 10px;
+}
+
+.shared__name--bold {
+    font-weight:bold;
+    color:#fff;
+}
+
+.shared__playlist {
+    color:#fff;
+}
+
+@media screen and (max-width:1100px) {
+    .main-section {
+        flex-direction:column;
+    }
+    .libary {
+        width:100%;
+        margin-bottom:20px;
+    }
+    .activities {
+        width:95%;
+        margin-left:0;
+        margin-bottom:20px;
+    }
+    .activity {
+        width:49%;
+        float:left;
+    }
+    .activity__button {
+        width: 49%;
+        clear: left;
+        margin: 0 auto
+    }
+    .now-playing__music {
+        width:50%;
+    }
+    .now-playing__sharing {
+        width:40%;
+    }
+    .now-playing {
+        position:relative;
+        display:inline-block;
+    }
+}
+
+
+@media screen and  (max-width:600px) {
+    .libary__title {
+        justify-content:center;
+        padding:0% 5% 3% 5%;
+        flex-direction:column;
+    }
+    .activity {
+        width:98%;
+    }
+    .activity__button {
+        width:98%;
+        margin-bottom:15px;
+    }
+    .now-playing__sharing {
+        display:none;
+    }
+    .now-playing__music {
+        width:88%;
+    }
+}

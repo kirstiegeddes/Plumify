@@ -1,0 +1,61 @@
+
+.header {
+	width:100%;
+        margin:0 auto;
+        display:flex;
+        justify-content:space-between;
+        padding:20px 0px 25px 0px;
+}
+
+.header__logo {
+    width:100%;
+}
+
+#navigation {
+    display:none;
+    position:absolute;
+    background-color:#fff;
+    list-style:none;
+    top: 65px;
+    right: 14px;
+    padding:10px;
+    width:250px;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,.3);
+    -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,.3); 
+    z-index:200;
+}
+
+.header__account {
+    position:relative;
+}
+
+.header__account__option {
+    padding:10px;
+    img {
+        width:35px;
+        float:left;
+    }
+    a {
+        line-height:38px;
+        padding:12px;
+        color:#000;
+    }
+}
+
+.arrow-up {
+  width: 0; 
+  height: 0; 
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #fff;
+  position: absolute;
+  top: -9px;
+  right: 50px;
+}
+
+.header__account__image {
+    float:right;
+    img {
+        width:80px;
+    }
+}

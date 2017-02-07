@@ -1,0 +1,55 @@
+
+h1,h2,h3,h4,p,a {
+    font-family:Hurme,Sans-Serif, Arial;
+}
+
+/*Font sizes*/
+
+html,
+body{
+    font-size: 20px;
+}
+
+p{
+    font-size:16px;
+    line-height: 22px;
+}
+
+h1{
+    font-size:45px;
+    font-weight:lighter;
+    margin:20px 0px 20px 0px;
+}
+
+h2{
+    font-size:20px;
+}
+
+input,
+button{
+    font-size: 16px;
+}
+
+strong{
+    font-weight:bold;
+}
+
+@media screen and (max-width:1024px){
+    input,
+    button{
+        font-size: 16px;
+    }
+    
+    ::-webkit-input-placeholder{
+        font-size:16px;
+    }
+    ::-moz-placeholder{
+        font-size:16px;
+    }
+    :-ms-input-placeholder{
+        font-size:16px;
+    }
+    :-moz-placeholder{
+        font-size:16px;
+    }
+}

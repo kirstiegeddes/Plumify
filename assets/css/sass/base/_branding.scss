@@ -1,0 +1,30 @@
+$blue:#34a3b4;  		/* used for background color */
+
+$dark-blue:#164952;		/* used for the background color of the foobar */
+
+$light-blue:#e1f1f3;            /* background colour for your blocks */
+
+$green: #35b57f;                /* cta color */
+
+$green-hover: darken(#35b57f, 10%);
+
+$grey: #b5b5b5;			/* next button */
+
+$grey-hover: darken(#b5b5b5, 10%); /*button hover */
+
+$red: #b54c58;
+
+
+body {
+    background-color:$blue;     /* background color for the whole site */
+}
+
+.page {
+    max-width:1300px;
+    margin:0 auto;
+    padding:10px;
+}
+
+h1,h2,h3,h4,p,a {
+    font-family:Hurme,Arial,Sans-Serif;
+}
